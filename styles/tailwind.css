@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.color-date {
+    color: #4D4D4D;
+}
+
+.color-item-border {
+    border-color: #C4C4C4;
+}
