@@ -8,10 +8,10 @@ export default function Home() {
       <Head>
         <title>Daniel Pyrathon</title>
       </Head>
-      <div className="flex md:mt-20 flex-wrap">
+      <div className="flex md:mt-20 mt-5 flex-wrap">
         <img src="/images/daniel.png" className="object-contain hidden sm:block" />
-        <div className="flex-1 ml-12">
-          <h1 className="text-4xl mt-20 font-semibold">Hello, I'm Daniel!</h1>
+        <div className="flex-1 md:ml-12 ml-6">
+          <h1 className="text-4xl md:mt-20 font-semibold">Hello, I'm Daniel!</h1>
           <p className="mt-3">I am a software engineer at 0x. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas in vel aliquam quis ac nunc, sed vulputate libero. Suspendisse consectetur aliquam dui interdum ac, lobortis. Eu at ipsum at cras arcu rutrum. Euismod sodales aenean tincidunt imperdiet quis amet aliquam ac.</p>
           <p className="mt-5">Rome, Italy 🛫 London, UK 🛫 San Francisco, US</p>
         </div>
@@ -31,7 +31,10 @@ export default function Home() {
         </Section>
       </div>
       <footer className={Styles.longChildItem}>
-        <a className="underline mt-4" href="https://twitter.com/pirosb3">@pirosb3</a>
+        <div className="flex mt-4 underline">
+          <a className="mr-6" href="https://twitter.com/pirosb3">@pirosb3</a>
+          <a href="/pubkey.asc">🔑 PGP public key</a>
+        </div>
       </footer>
     </div>
   )

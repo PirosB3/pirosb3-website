@@ -46,20 +46,6 @@ export const WORKS: Work[] = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare viverra id feugiat a. Faucibus donec auctor consectetur sed ',
         duration: 'Mar/2019 - Today'
     },
-    {
-        title: 'Senior Software Engineer',
-        employer: 'ZeroEx Inc.',
-        employerUrl: 'https://0x.org',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare viverra id feugiat a. Faucibus donec auctor consectetur sed ',
-        duration: 'Mar/2019 - Today'
-    },
-    {
-        title: 'Senior Software Engineer',
-        employer: 'ZeroEx Inc.',
-        employerUrl: 'https://0x.org',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare viverra id feugiat a. Faucibus donec auctor consectetur sed ',
-        duration: 'Mar/2019 - Today'
-    },
 ]
 
 export const MEDIA: Media[] = [
@@ -91,8 +77,8 @@ export const PROJECTS: Project[] = [
 ]
 
 export const Styles = {
-    'sectionBox': 'flex flex-col mt-5',
-    'sectionHeader': 'font-semibold text-2xl mb-5 pl-2',
+    'sectionBox': 'flex flex-col mt-5 ml-6 md:ml-0',
+    'sectionHeader': 'font-semibold text-2xl mb-5 md:pl-2',
     'componentTitle': 'font-semibold',
     'longChildItem': 'flex flex-col w-full mb-8 pt-5 border-solid border-t color-item-border px-3'
   }
