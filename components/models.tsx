@@ -53,6 +53,13 @@ export const WORKS: Work[] = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare viverra id feugiat a. Faucibus donec auctor consectetur sed ',
         duration: 'Mar/2019 - Today'
     },
+    {
+        title: 'Senior Software Engineer',
+        employer: 'ZeroEx Inc.',
+        employerUrl: 'https://0x.org',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare viverra id feugiat a. Faucibus donec auctor consectetur sed ',
+        duration: 'Mar/2019 - Today'
+    },
 ]
 
 export const MEDIA: Media[] = [
@@ -85,7 +92,7 @@ export const PROJECTS: Project[] = [
 
 export const Styles = {
     'sectionBox': 'flex flex-col mt-5',
-    'sectionHeader': 'font-semibold text-2xl mb-5 pl-6',
+    'sectionHeader': 'font-semibold text-2xl mb-5 pl-2',
     'componentTitle': 'font-semibold',
     'longChildItem': 'flex flex-col w-full mb-8 pt-5 border-solid border-t color-item-border px-3'
   }
@@ -130,11 +137,11 @@ export const ProjectComponent: FunctionComponent<{project: Project}> = (props) =
     );
 }
 
-export const Section: FunctionComponent<{title: string, classExtra: string }> = (props) => {
+export const Section: FunctionComponent<{title: string, childBoxClassExtra?: string, parentBoxClassExtra?: string }> = (props) => {
     return (
-        <div className={Styles.sectionBox}>
+        <div className={`${Styles.sectionBox} ${props.parentBoxClassExtra}`}>
             <h2 className={Styles.sectionHeader}>{props.title}</h2>
-            <div className={`flex ${props.classExtra}`}>
+            <div className={`flex ${props.childBoxClassExtra}`}>
                 {props.children}
             </div>
         </div>

@@ -16,15 +16,20 @@ export default function Home() {
           <p className="mt-5">Rome, Italy 🛫 London, UK 🛫 San Francisco, US</p>
         </div>
       </div>
-      <Section title="Works" classExtra="flex-wrap">
+      <Section title="Works" childBoxClassExtra="flex-wrap">
         {WORKS.map((work, idx) => <WorkComponent key={idx} work={work} />)}
       </Section>
-      <Section title="Talks & Articles" classExtra="flex-col">
+      <Section title="Talks & Articles" childBoxClassExtra="flex-col">
         {MEDIA.map((media, idx) => <MediaComponent key={idx} media={media} />)}
       </Section>
-      <Section title="Projects" classExtra="flex-col">
-        {PROJECTS.map((project, idx) => <ProjectComponent key={idx} project={project} />)}
-      </Section>
+      <div className="flex flex-wrap">
+        <Section title="Projects" childBoxClassExtra="flex-col" parentBoxClassExtra="md:pr-3 md:w-1/2 w-full">
+          {PROJECTS.map((project, idx) => <ProjectComponent key={idx} project={project} />)}
+        </Section>
+        <Section title="Volunteering" childBoxClassExtra="flex-col" parentBoxClassExtra="md:pl-3 md:w-1/2 w-full">
+          {PROJECTS.slice(0, 1).map((project, idx) => <ProjectComponent key={idx} project={project} />)}
+        </Section>
+      </div>
       <footer className={Styles.longChildItem}>
         <a className="underline mt-4" href="https://twitter.com/pirosb3">@pirosb3</a>
       </footer>
