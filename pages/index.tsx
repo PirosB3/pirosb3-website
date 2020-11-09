@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import { MEDIA, MediaComponent, Styles, WorkComponent, WORKS, Section, PROJECTS, ProjectComponent } from '../components/models'
+import { WORKS, MEDIA, PROJECTS, VOLUNTEERING } from '../components/data'
+import { MediaComponent, Styles, WorkComponent, Section, ProjectComponent } from '../components/models'
 
 
 export default function Home() {
@@ -12,8 +13,17 @@ export default function Home() {
         <img src="/images/daniel.png" className="object-contain hidden sm:block" />
         <div className="flex-1 md:ml-12 ml-6">
           <h1 className="text-4xl md:mt-20 font-semibold">Hello, I'm Daniel!</h1>
-          <p className="mt-3">I am a software engineer at 0x. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas in vel aliquam quis ac nunc, sed vulputate libero. Suspendisse consectetur aliquam dui interdum ac, lobortis. Eu at ipsum at cras arcu rutrum. Euismod sodales aenean tincidunt imperdiet quis amet aliquam ac.</p>
-          <p className="mt-5">Rome, Italy 🛫 London, UK 🛫 San Francisco, US</p>
+          <p className="mt-3">
+            This is my personal space. I love computers, building software, and fostering a culture of passion and growth within my team.
+          </p>
+          <p className="mt-3">
+            I moved to San Francisco in 2015 to work for an Online Dating startup (my mum is still unclear of what I used to do) and I ended up biting the "Bitcoin bug"
+            when I discovered the Whitepaper. Nowadays, I work for <a href="https://0x.org">0x</a> with a really amazing group of people.
+          </p>
+          <p className="mt-3">
+            When I'm not working, I try to travel as much as possible and meet new inspiring people on the road. Some of them I end up doing really cool things with, 
+            others remain a great memory.
+          </p>
         </div>
       </div>
       <Section title="Works" childBoxClassExtra="flex-wrap">
@@ -27,7 +37,7 @@ export default function Home() {
           {PROJECTS.map((project, idx) => <ProjectComponent key={idx} project={project} />)}
         </Section>
         <Section title="Volunteering" childBoxClassExtra="flex-col" parentBoxClassExtra="md:pl-3 md:w-1/2 w-full">
-          {PROJECTS.slice(0, 1).map((project, idx) => <ProjectComponent key={idx} project={project} />)}
+          {VOLUNTEERING.map((volunteer, idx) => <ProjectComponent key={idx} project={volunteer} />)}
         </Section>
       </div>
       <footer className={Styles.longChildItem}>
