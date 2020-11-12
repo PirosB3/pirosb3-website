@@ -5,7 +5,7 @@ import { MediaComponent, Styles, WorkComponent, Section, ProjectComponent } from
 
 export default function Home() {
   return (
-    <div className='container mx-auto font-inter bg-white shadow-2xl'>
+    <div className='container mx-auto font-inter bg-white shadow-2xl rounded-lg my-10'>
       <Head>
         <title>Daniel Pyrathon</title>
       </Head>
