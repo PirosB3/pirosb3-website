@@ -39,7 +39,7 @@ export const MediaComponent: FunctionComponent<{media: Media}> = (props) => {
                 <p className="ml-2 color-date font-medium">{media.type.toString()}</p>
             </div>
             <h3 className={`${Styles.componentTitle} mt-3 underline`}><a target="_blank" href={media.url}>{media.title}</a></h3>
-            <p className="mt-3">{media.date} • {media.location}</p>
+            <p className="mt-3 color-date ">{media.date} • {media.location}</p>
         </div>
     );
 }

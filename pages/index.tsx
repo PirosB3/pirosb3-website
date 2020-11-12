@@ -23,7 +23,7 @@ export default function Home() {
           </p>
           <p className="mt-3">
             I moved to San Francisco in 2015 to work for an Online Dating startup (my mum is still unclear of what I used to do) and I ended up biting the "Bitcoin bug"
-            when I discovered the Whitepaper. Nowadays, I work for <a href="https://0x.org">0x</a> with a really amazing group of people.
+            when I discovered the Whitepaper. Nowadays, I work for <a className="underline" target="_blank" href="https://0x.org">0x</a> with a really amazing group of people.
           </p>
           <p className="mt-3">
             When I'm not working, I try to travel as much as possible and meet new inspiring people on the road. Some of them I end up doing really cool things with, 
@@ -50,6 +50,7 @@ export default function Home() {
           <a className="flex-grow" target="_blank" href="https://twitter.com/pirosb3">@pirosb3</a>
           <a className="mx-2" href="mailto:pirosb3@gmail.com">Email</a>
           <a className="mx-2" target="_blank" href="https://www.linkedin.com/in/danielpyrathon/">Linkedin</a>
+          <a className="mx-2" target="_blank" href="https://github.com/PirosB3/">GitHub</a>
           <a className="mx-2" href="/pubkey.asc">PGP public key 🔑</a>
         </div>
       </footer>

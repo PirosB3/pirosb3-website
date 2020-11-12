@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.color-date {
+    color: #ababab;
+}
 
 .color-item-border {
     border-color: #C4C4C4;
