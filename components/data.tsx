@@ -83,14 +83,14 @@ export const MEDIA: Media[] = [
         location: 'Django Under the Hood - Amsterdam',
         title: 'Daniel Pyrathon about Meta API at Django: Under The Hood ',
         type: MediaType.Video,
-        url: 'https://medium.com/@pirosb3/how-sf-python-hosted-a-remote-meetup-during-the-times-of-covid-19-b6ac10ba4cb8',
+        url: 'https://www.youtube.com/watch?v=-1tt0S__kQk',
     },
     {
-        date: 'Dec/2014',
+        date: 'Jul/2014',
         location: 'PyCon IT - Florence',
         title: 'Daniel Pyrathon about Meta API at Django: Under The Hood',
         type: MediaType.Video,
-        url: 'https://www.youtube.com/watch?v=-1tt0S__kQk',
+        url: 'https://www.youtube.com/watch?v=pxBfDe7wiEo',
     },
 ].sort((a, b) => parseInt(a.date.split('/')[1]) < parseInt(b.date.split('/')[1]) ? 1 : -1);
 
