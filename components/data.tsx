@@ -117,6 +117,15 @@ export const PROJECTS: Project[] = [
         ),
     },
     {
+        url: 'https://0xdoc.xyz/',
+        title: '0x Doc',
+        description: (
+            <span>
+                0x Doc was created to serve technically-savvy users such as market-makers, 0x API integrators, and RFQ providers that want experiment, simulate, and trade 0x V3 orders. 
+            </span>
+        ),
+    },
+    {
         title: 'Django model meta contributions',
         description: (
             <span>
