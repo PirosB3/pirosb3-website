@@ -2,15 +2,15 @@ import React, { FunctionComponent } from 'react';
 import { Work, Media, MediaType, Project } from './types';
 
 const MEDIA_IMAGES: {[key in MediaType]: string} = {
-    [MediaType.Article] : '/images/article.png',
-    [MediaType.Video] : '/images/video.png',
+    [MediaType.Article] : '/images/article.svg',
+    [MediaType.Video] : '/images/video.svg',
 }
 
 export const Styles = {
     'sectionBox': 'flex flex-col mt-5 ml-6 md:ml-0',
     'sectionHeader': 'font-semibold text-2xl mb-5 md:pl-2 font-syne font-bold text-3xl',
     'componentTitle': 'font-bold text-xl',
-    'longChildItem': 'flex flex-col w-full mb-8 pt-5 border-solid border-t color-item-border px-3'
+    'longChildItem': 'flex flex-col w-full mb-8 pt-5 px-3'
 }
 
 export const WorkComponent: FunctionComponent<{work: Work}> = (props) => {
