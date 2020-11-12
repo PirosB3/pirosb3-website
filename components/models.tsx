@@ -7,7 +7,7 @@ const MEDIA_IMAGES: {[key in MediaType]: string} = {
 }
 
 export const Styles = {
-    'sectionBox': 'flex flex-col mt-5 ml-6 md:ml-0',
+    'sectionBox': 'flex flex-col mt-5 ml-6 md:ml-0 px-12',
     'sectionHeader': 'font-semibold text-2xl mb-5 md:pl-2 font-syne font-bold text-3xl',
     'componentTitle': 'font-bold text-xl',
     'longChildItem': 'flex flex-col w-full mb-8 pt-5 px-3'

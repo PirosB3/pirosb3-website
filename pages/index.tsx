@@ -33,21 +33,23 @@ export default function Home() {
       <Section title="Works" childBoxClassExtra="flex-wrap">
         {WORKS.map((work, idx) => <WorkComponent key={idx} work={work} />)}
       </Section>
-      <Section title="Talks & Articles" childBoxClassExtra="flex-col" parentBoxClassExtra="bg-black text-white bg-image bg-right-bottom bg-no-repeat">
+      <Section title="Talks & Articles" childBoxClassExtra="flex-col" parentBoxClassExtra="bg-black text-white bg-image bg-top bg-no-repeat py-10">
         {MEDIA.map((media, idx) => <MediaComponent key={idx} media={media} />)}
       </Section>
-      <div className="flex flex-wrap">
-        <Section title="Projects" childBoxClassExtra="flex-col" parentBoxClassExtra="md:pr-3 md:w-1/2 w-full">
+      <div className="flex flex-wrap mt-10">
+        <Section title="Projects" childBoxClassExtra="flex-col" parentBoxClassExtra="md:pr-12 md:w-1/2 w-full">
           {PROJECTS.map((project, idx) => <ProjectComponent key={idx} project={project} />)}
         </Section>
-        <Section title="Volunteering" childBoxClassExtra="flex-col" parentBoxClassExtra="md:pl-3 md:w-1/2 w-full">
+        <Section title="Volunteering" childBoxClassExtra="flex-col" parentBoxClassExtra="md:pl-12 md:w-1/2 w-full">
           {VOLUNTEERING.map((volunteer, idx) => <ProjectComponent key={idx} project={volunteer} />)}
         </Section>
       </div>
-      <footer className={Styles.longChildItem}>
-        <div className="flex mt-4 underline">
-          <a className="mr-6" href="https://twitter.com/pirosb3">@pirosb3</a>
-          <a href="/pubkey.asc">🔑 PGP public key</a>
+      <footer className={`flex flex-col w-full py-5 px-12 footer-color border-t-2` }>
+        <div className="flex my-4">
+          <a className="flex-grow" href="https://twitter.com/pirosb3">@pirosb3</a>
+          <a className="mx-2" href="mailto:pirosb3@gmail.com">Email</a>
+          <a className="mx-2" href="https://www.linkedin.com/in/danielpyrathon/">Linkedin</a>
+          <a className="mx-2" href="/pubkey.asc">PGP public key 🔑</a>
         </div>
       </footer>
     </div>
