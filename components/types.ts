@@ -4,6 +4,7 @@ export interface Work {
     employerUrl: string;
     title: string;
     description: string;
+    imageUrl: string;
 }
 
 export enum MediaType {

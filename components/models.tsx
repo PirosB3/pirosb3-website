@@ -8,8 +8,8 @@ const MEDIA_IMAGES: {[key in MediaType]: string} = {
 
 export const Styles = {
     'sectionBox': 'flex flex-col mt-5 ml-6 md:ml-0',
-    'sectionHeader': 'font-semibold text-2xl mb-5 md:pl-2',
-    'componentTitle': 'font-semibold',
+    'sectionHeader': 'font-semibold text-2xl mb-5 md:pl-2 font-syne font-bold text-3xl',
+    'componentTitle': 'font-bold text-xl',
     'longChildItem': 'flex flex-col w-full mb-8 pt-5 border-solid border-t color-item-border px-3'
 }
 
@@ -17,10 +17,12 @@ export const WorkComponent: FunctionComponent<{work: Work}> = (props) => {
     const { work } = props;
     return (
         <div className="flex md:w-1/2 w-full mb-8">
-            <img src="https://via.placeholder.com/216x185" />
-            <div className="flex flex-col mr-12 border-solid border-t color-item-border">
-                <div className="ml-5 flex-grow text-gray-600 text-sm mt-5 color-date">{work.duration}</div>
-                <div className={`${Styles.componentTitle} ml-5 flex-grow`}>{work.title} @ <a className="underline" href={work.employerUrl}>{work.employer}</a></div>
+            <div className="relative">
+                <img className="h-full w-full object-cover" src={work.imageUrl} />
+            </div>
+            <div className="flex flex-col mr-12">
+                <div className={`${Styles.componentTitle} ml-5 flex-grow mt-5`}><a className="underline" href={work.employerUrl}>{work.employer}</a></div>
+                <div className="ml-5 flex-grow text-gray-700 font-bold">{work.duration}</div>
                 <div className="ml-5 flex-grow">{work.description}</div>
             </div>
         </div>

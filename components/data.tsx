@@ -7,31 +7,43 @@ export const WORKS: Work[] = [
         employerUrl: 'https://0x.org',
         description: `
         Build open source infrastructure and tooling (TypeScript, Python, Go) with 
-        potential to disrupt the legacy financial system. Work with high degree of autonomy,
-        across teams, and owns entire features from specification to shipping.
+        potential to disrupt the legacy financial system.
         `,
-        duration: 'Mar/2019 - Today'
+        duration: 'Mar/2019 - Today',
+        imageUrl: '/images/logos/0x.png',
     },
     {
         title: 'Senior Machine Learning engineer',
         employer: 'Coffee meets Bagel',
         employerUrl: 'https://coffeemeetsbagel.com/',
         description: `
-        Designed, tested, and released features that scaled and were used by millions. 
-        Built a machine learning pipeline using EC2, ECS, Docker, and gRPC that allows Data Scientists 
-        to innovate without having to focus on deployment, retraining, and offline testing.
+        Build open source infrastructure and tooling (TypeScript, Python, Go) with 
+        potential to disrupt the legacy financial system.
         `,
         duration: 'Sep/2015 - Mar/2019',
+        imageUrl: '/images/logos/cmb.png',
     },
     {
         title: 'Developer',
         employer: 'Skimlinks',
         employerUrl: 'https://skimlinks.com/',
         description: `
-        Developed, together with a team of other highly skilled developers, the Skimlinks Publisher Hub 
-        user interface. I really enjoyed working with such wonderful people in such a wonderful city.
+        Build open source infrastructure and tooling (TypeScript, Python, Go) with 
+        potential to disrupt the legacy financial system.
         `,
         duration: 'Sep/2015 - Mar/2019',
+        imageUrl: '/images/logos/skimlinks.png',
+    },
+    {
+        title: 'Cofounder',
+        employer: 'Gnammo',
+        employerUrl: 'https://gnammo.com/',
+        description: `
+        Build open source infrastructure and tooling (TypeScript, Python, Go) with 
+        potential to disrupt the legacy financial system.
+        `,
+        duration: 'Sep/2015 - Mar/2019',
+        imageUrl: '/images/logos/gnammo.png',
     },
 ]
 

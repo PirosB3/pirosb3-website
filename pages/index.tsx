@@ -11,7 +11,9 @@ export default function Home() {
       </Head>
       <div className="flex flex-wrap my-header py-24 px-12 text-lg">
         <div className="md:w-1/2 justify-center flex">
-          <img src="/images/daniel.png"/>
+            <div className="relative">
+                <img className="h-full w-full object-cover rounded-2xl" src="/images/daniel.png" />
+            </div>
         </div>
         <div className="md:w-1/2 flex-1 md:ml-12 ml-6">
           <h1 className="md:mt-20 font-bold font-syne text-5xl">Hello, I'm Daniel!</h1>
