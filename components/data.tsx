@@ -108,6 +108,7 @@ export const MEDIA: Media[] = [
 
 export const PROJECTS: Project[] = [
     {
+        url: 'https://cycletoken.me/',
         title: 'CycleToken',
         description: (
             <span>

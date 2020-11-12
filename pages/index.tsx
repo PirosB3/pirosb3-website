@@ -5,7 +5,7 @@ import { MediaComponent, Styles, WorkComponent, Section, ProjectComponent } from
 
 export default function Home() {
   return (
-    <div className='container mx-auto font-inter bg-white shadow-2xl rounded-lg my-10'>
+    <div className='container mx-auto font-inter bg-white shadow-2xl my-10'>
       <Head>
         <title>Daniel Pyrathon</title>
       </Head>
@@ -30,7 +30,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <Section title="Works" childBoxClassExtra="flex-wrap">
+      <Section title="Work" childBoxClassExtra="flex-wrap" parentBoxClassExtra="pt-5">
         {WORKS.map((work, idx) => <WorkComponent key={idx} work={work} />)}
       </Section>
       <Section title="Talks & Articles" childBoxClassExtra="flex-col" parentBoxClassExtra="bg-black text-white bg-image bg-top bg-no-repeat py-10">
