@@ -5,14 +5,16 @@ import { MediaComponent, Styles, WorkComponent, Section, ProjectComponent } from
 
 export default function Home() {
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto font-inter'>
       <Head>
         <title>Daniel Pyrathon</title>
       </Head>
-      <div className="flex md:mt-20 mt-5 flex-wrap">
-        <img src="/images/daniel.png" className="object-contain hidden sm:block" />
-        <div className="flex-1 md:ml-12 ml-6">
-          <h1 className="text-4xl md:mt-20 font-semibold">Hello, I'm Daniel!</h1>
+      <div className="flex flex-wrap my-header py-24 px-12 text-lg">
+        <div className="md:w-1/2 justify-center flex">
+          <img src="/images/daniel.png"/>
+        </div>
+        <div className="md:w-1/2 flex-1 md:ml-12 ml-6">
+          <h1 className="md:mt-20 font-bold font-syne text-5xl">Hello, I'm Daniel!</h1>
           <p className="mt-3">
             This is my personal space. I love computers, building software, and fostering a culture of passion and growth within my team.
           </p>

@@ -5,6 +5,9 @@ module.exports = {
   },
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      syne: ['Syne', 'sans-serif']
+    },
     extend: {
       colors: {
         'accent-1': '#333',
@@ -12,5 +15,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('tailwindcss-font-inter')()]
 }

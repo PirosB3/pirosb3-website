@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 .color-date {
     color: #4D4D4D;
@@ -8,4 +11,8 @@
 
 .color-item-border {
     border-color: #C4C4C4;
+}
+
+.my-header {
+    background: linear-gradient(100.59deg, #ECEBEE 11.03%, #FFF3D9 95.2%);
 }
