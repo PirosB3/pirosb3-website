@@ -50,7 +50,7 @@ export const ProjectComponent: FunctionComponent<{project: Project}> = (props) =
 
     return (
         <div className={Styles.longChildItem}>
-            <h3 className={`${Styles.componentTitle} mt-3`}>{title}</h3>
+            <h3 className={`${Styles.componentTitle}`}>{title}</h3>
             <p className="mt-3">{project.description}</p>
         </div>
     );

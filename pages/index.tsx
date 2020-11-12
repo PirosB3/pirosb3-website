@@ -44,7 +44,7 @@ export default function Home() {
           {VOLUNTEERING.map((volunteer, idx) => <ProjectComponent key={idx} project={volunteer} />)}
         </Section>
       </div>
-      <footer className={`flex flex-col w-full py-5 px-12 footer-color border-t-2` }>
+      <footer className="flex flex-col w-full py-5 px-12 footer-color border-t-2 mt-8">
         <div className="flex my-4">
           <a className="flex-grow" href="https://twitter.com/pirosb3">@pirosb3</a>
           <a className="mx-2" href="mailto:pirosb3@gmail.com">Email</a>
