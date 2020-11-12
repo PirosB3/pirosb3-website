@@ -1,6 +1,7 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import { WORKS, MEDIA, PROJECTS, VOLUNTEERING } from '../components/data'
-import { MediaComponent, Styles, WorkComponent, Section, ProjectComponent } from '../components/models'
+import { MediaComponent, WorkComponent, Section, ProjectComponent } from '../components/models'
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
       <div className="flex flex-wrap my-header py-24 px-12 text-lg">
         <div className="md:w-1/2 justify-center flex">
             <div className="relative">
-                <img className="h-full w-full object-cover rounded-2xl" src="/images/daniel.png" />
+              <Image src="/images/daniel.png" width="616" height="460" className="h-full w-full object-cover rounded-2xl" />
             </div>
         </div>
         <div className="md:w-1/2 flex-1 md:ml-12 ml-6">
