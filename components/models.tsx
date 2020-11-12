@@ -21,7 +21,7 @@ export const WorkComponent: FunctionComponent<{work: Work}> = (props) => {
                 <img className="h-full w-full object-cover" src={work.imageUrl} />
             </div>
             <div className="flex flex-col mr-12">
-                <div className={`${Styles.componentTitle} ml-5 flex-grow mt-5`}><a className="underline" href={work.employerUrl}>{work.employer}</a></div>
+                <div className={`${Styles.componentTitle} ml-5 flex-grow mt-5`}><a className="underline" target="_blank" href={work.employerUrl}>{work.employer}</a></div>
                 <div className="ml-5 flex-grow text-gray-700 font-bold">{work.duration}</div>
                 <div className="ml-5 flex-grow">{work.description}</div>
             </div>
@@ -38,7 +38,7 @@ export const MediaComponent: FunctionComponent<{media: Media}> = (props) => {
                 <img src={MEDIA_IMAGES[media.type]} />
                 <p className="ml-2 color-date font-medium">{media.type.toString()}</p>
             </div>
-            <h3 className={`${Styles.componentTitle} mt-3 underline`}><a href={media.url}>{media.title}</a></h3>
+            <h3 className={`${Styles.componentTitle} mt-3 underline`}><a target="_blank" href={media.url}>{media.title}</a></h3>
             <p className="mt-3">{media.date} • {media.location}</p>
         </div>
     );
@@ -46,7 +46,7 @@ export const MediaComponent: FunctionComponent<{media: Media}> = (props) => {
 
 export const ProjectComponent: FunctionComponent<{project: Project}> = (props) => {
     const { project } = props;
-    const title = project.url ? <a className="underline" href={project.url}>{project.title}</a> : <span>{project.title}</span>
+    const title = project.url ? <a className="underline" target="_blank" href={project.url}>{project.title}</a> : <span>{project.title}</span>
 
     return (
         <div className={Styles.longChildItem}>

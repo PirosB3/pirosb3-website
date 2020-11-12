@@ -112,7 +112,7 @@ export const PROJECTS: Project[] = [
         title: 'CycleToken',
         description: (
             <span>
-                CycleToken is a unique collection of 7 cryptocurrency tokens (ERC721) that I build to raise money for <a className="underline" href="https://www.aidslifecycle.org/">AIDS LifeCycle</a>.
+                CycleToken is a unique collection of 7 cryptocurrency tokens (ERC721) that I build to raise money for <a target="_blank" className="underline" href="https://www.aidslifecycle.org/">AIDS LifeCycle</a>.
             </span>
         ),
     },
@@ -121,7 +121,7 @@ export const PROJECTS: Project[] = [
         description: (
             <span>
                 Designed, tested, and released Django’s Meta API, already in use by many developers in production. Planned the strategy for deprecation and backwards-compatibility: Old API 100% backwards-compatible.
-                My code can be found <a className="underline" href="https://github.com/django/django/commit/fb48eb05816b1ac87d58696cdfe48be18c901f16">Here</a>
+                My code can be found <a className="underline" target="_blank" href="https://github.com/django/django/commit/fb48eb05816b1ac87d58696cdfe48be18c901f16">Here</a>
             </span>
         ),
     },
@@ -132,7 +132,7 @@ export const VOLUNTEERING: Project[] = [
         title: 'SF Python and PyBay',
         description: (
             <span>
-                Since 2015, I've been on the leadership team for <a href="http://pybay.com/" className="underline">PyBay</a> (the annual flaghip conference) and <a href="https://www.sfpythonmeetup.com/" className="underline">SF Python</a> (the monthly meetup).
+                Since 2015, I've been on the leadership team for <a target="_blank" href="http://pybay.com/" className="underline">PyBay</a> (the annual flaghip conference) and <a target="_blank" href="https://www.sfpythonmeetup.com/" className="underline">SF Python</a> (the monthly meetup).
                 Aside from lining up talks for SF Python and helping out with PyBay, I've also been helping attendees find jobs and encourage
                 bootcamp students to become first-time speakers.
             </span>
@@ -142,7 +142,7 @@ export const VOLUNTEERING: Project[] = [
         title: 'Techtonica',
         description: (
             <span>
-                I've been a volunteer for Techtonica's 2019 cohort. <a href="https://techtonica.org/" className="underline">Techtonica</a> provides aspirational Bay Area women and non-binary adults with low incomes a pathway to careers in software engineering, 
+                I've been a volunteer for Techtonica's 2019 cohort. <a target="_blank" href="https://techtonica.org/" className="underline">Techtonica</a> provides aspirational Bay Area women and non-binary adults with low incomes a pathway to careers in software engineering, 
                 and serves the recruitment needs of tech companies committed to diversity and inclusion in the workplace. I'm proud to say that 2 of the students that I've been directly mentoring have been chosen for an internship opportunity, and both of them
                 have also given talks at SF Python!
             </span>
