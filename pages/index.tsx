@@ -7,7 +7,7 @@ import { MediaComponent, WorkComponent, Section, ProjectComponent } from '../com
 import {google} from 'googleapis'
 import { Media, MediaType } from '../components/types'
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
   const instance = google.youtube({
     version: 'v3',
     auth: process.env.YT_KEY,
@@ -19,27 +19,23 @@ export const getStaticProps: GetStaticProps = async (context) => {
     maxResults: 50,
   });
   const items = results.data.items || [];
+  const itemIds: Array<string> = items.map(item => item.snippet?.resourceId?.videoId).filter(item => item !== undefined)
+  const response = await instance.videos.list({
+    id: itemIds,
+    part: ['snippet'],
+  })
 
   const videos: Media<number>[] = [];
-  for (const item of items) {
-    const videoId: string | undefined = item.snippet?.resourceId?.videoId;
+  for (const item of response.data.items) {
+    const videoId: string | undefined = item.id
     const title: string | undefined = item.snippet?.title;
+    const channelTitle: string | undefined = item.snippet?.channelTitle;
+    const publishedAt: string | undefined = item.snippet?.publishedAt;
 
-    if (videoId && title) {
-
-      const response = await instance.videos.list({
-        id: [videoId],
-        part: ['snippet'],
-      })
-
-      if (response.data.items?.length !== 1) {
-        continue;
-      }
-      const publishedAt: string | undefined = response.data.items[0].snippet?.publishedAt;
-
+    if (videoId && title && channelTitle && publishedAt) {
       videos.push({
         date: (new Date(publishedAt)).getTime(),
-        location: 'YouTube',
+        location: channelTitle,
         type: MediaType.Video,
         url: `https://www.youtube.com/watch?v=${videoId}`,
         title,
@@ -50,7 +46,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     props: {
       videos,
     },
-    revalidate: 1,
+    revalidate: 30,
   }
 }
 
