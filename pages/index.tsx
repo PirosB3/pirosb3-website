@@ -1,10 +1,72 @@
+import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { WORKS, MEDIA, PROJECTS, VOLUNTEERING } from '../components/data'
 import { MediaComponent, WorkComponent, Section, ProjectComponent } from '../components/models'
 
+import {google} from 'googleapis'
+import { Media, MediaType } from '../components/types'
 
-export default function Home() {
+interface YoutubeVideo {
+  publishedAt: Date;
+  title: string;
+  videoId: string;
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const instance = google.youtube({
+    version: 'v3',
+    auth: 'AIzaSyDienhJbQVphSCZvOanDPy_sHfb84iwjWI',
+  });
+
+  const results = await instance.playlistItems.list({
+    playlistId: 'PL-LwXcXRA2ocTwwdPg0tU_0zx7IrBSRA4',
+    part: ['snippet', 'id', 'contentDetails'],
+  });
+  const items = results.data.items || [];
+
+  const videos: Media<number>[] = [];
+  for (const item of items) {
+    const videoId: string | undefined = item.snippet?.resourceId?.videoId;
+    const title: string | undefined = item.snippet?.title;
+
+    if (videoId && title) {
+
+      const response = await instance.videos.list({
+        id: [videoId],
+        part: ['snippet'],
+      })
+
+      if (response.data.items?.length !== 1) {
+        continue;
+      }
+      const publishedAt: string | undefined = response.data.items[0].snippet?.publishedAt;
+
+      videos.push({
+        date: (new Date(publishedAt)).getTime(),
+        location: 'YouTube',
+        type: MediaType.Video,
+        url: `https://www.youtube.com/watch?v=${videoId}`,
+        title,
+      });
+    }
+  }
+  return {
+    props: {
+      videos,
+    },
+    revalidate: 1,
+  }
+}
+
+
+export default function Home(props: {videos: Media<number>[]}) {
+  const allMedia: Media<Date>[] = props.videos.map(v => {
+    return {
+      ...v,
+      date: new Date(v.date),
+    }
+  }).concat(MEDIA).sort((a, b) => a.date < b.date ? 1 : -1);
   return (
     <div className='container mx-auto font-inter bg-white shadow-2xl my-10'>
       <Head>
@@ -35,7 +97,7 @@ export default function Home() {
         {WORKS.map((work, idx) => <WorkComponent key={idx} work={work} />)}
       </Section>
       <Section title="Talks & Articles" childBoxClassExtra="flex-col" parentBoxClassExtra="bg-black text-white bg-image bg-top bg-no-repeat py-10">
-        {MEDIA.map((media, idx) => <MediaComponent key={idx} media={media} />)}
+        {allMedia.map((media, idx) => <MediaComponent key={idx} media={media} />)}
       </Section>
       <div className="flex flex-wrap mt-10">
         <Section title="Projects" childBoxClassExtra="flex-col" parentBoxClassExtra="md:pr-12 md:w-1/2 w-full">

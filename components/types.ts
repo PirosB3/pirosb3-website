@@ -12,10 +12,10 @@ export enum MediaType {
     Article = 'Article',
 }
 
-export interface Media {
+export interface Media<T> {
     type: MediaType;
     title: string;
-    date: string;
+    date: T,
     url: string;
     location: string;
 }

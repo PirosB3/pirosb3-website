@@ -47,64 +47,29 @@ export const WORKS: Work[] = [
     },
 ]
 
-export const MEDIA: Media[] = [
+export const MEDIA: Media<Date>[] = [
     {
-        date: 'Apr/2020',
-        location: 'UC Berkeley Blockchain Club',
-        title: 'Guest Lecture: Spring 2020 Blockchain for Developers on DeFi',
-        type: MediaType.Video,
-        url: 'https://youtu.be/SOBGjoJHxV4',
-    },
-    {
-        date: 'Jan/2019',
+        date: new Date(2019, 1, 1),
         location: 'AWS Blog guest post',
         title: 'Powering recommendation models using Amazon ElastiCache for Redis at Coffee Meets Bagel',
         type: MediaType.Article,
         url: 'https://aws.amazon.com/blogs/database/powering-recommendation-models-using-amazon-elasticache-for-redis-at-coffee-meets-bagel/',
     },
     {
-        date: 'Dec/2017',
-        location: 'AWS Re:invent Las Vegas',
-        title: 'Dating and Data Science: How Coffee MeetsBagel Uses Amazon Elasticache (DAT323)',
-        type: MediaType.Video,
-        url: 'https://www.youtube.com/watch?v=_Aniee-XpSQ&feature=youtu.be',
-    },
-    {
-        date: 'May/2018',
-        location: 'PyCon 2018 Cleveland',
-        title: 'A practical guide to Singular Value Decomposition in Python',
-        type: MediaType.Video,
-        url: 'https://www.youtube.com/watch?v=d7iIb_XVkZs&t=762s',
-    },
-    {
-        date: 'May/2018',
-        location: 'Botmetrics podcast',
-        title: 'Botmetrics: Meet The Makers // Daniel Pyrathon & Ranger Dave',
-        type: MediaType.Video,
-        url: 'https://www.youtube.com/watch?v=rq_JMDfN5YE&feature=youtu.be',
-    },
-    {
-        date: 'Mar/2020',
+        date: new Date(2020, 3, 1),
         location: 'Medium',
         title: 'How SF Python hosted a remote meetup during the times of COVID-19',
         type: MediaType.Article,
         url: 'https://medium.com/@pirosb3/how-sf-python-hosted-a-remote-meetup-during-the-times-of-covid-19-b6ac10ba4cb8',
     },
-    {
-        date: 'Dec/2014',
-        location: 'Django Under the Hood - Amsterdam',
-        title: 'Daniel Pyrathon about Meta API at Django: Under The Hood ',
-        type: MediaType.Video,
-        url: 'https://www.youtube.com/watch?v=-1tt0S__kQk',
-    },
-    {
-        date: 'Jul/2014',
-        location: 'PyCon IT - Florence',
-        title: 'Daniel Pyrathon about Meta API at Django: Under The Hood',
-        type: MediaType.Video,
-        url: 'https://www.youtube.com/watch?v=pxBfDe7wiEo',
-    },
-].sort((a, b) => parseInt(a.date.split('/')[1]) < parseInt(b.date.split('/')[1]) ? 1 : -1);
+    // {
+    //     date: 'Jul/2014',
+    //     location: 'PyCon IT - Florence',
+    //     title: 'Daniel Pyrathon about Meta API at Django: Under The Hood',
+    //     type: MediaType.Video,
+    //     url: 'https://www.youtube.com/watch?v=pxBfDe7wiEo',
+    // },
+];
 
 export const PROJECTS: Project[] = [
     {
