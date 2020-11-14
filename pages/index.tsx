@@ -7,21 +7,16 @@ import { MediaComponent, WorkComponent, Section, ProjectComponent } from '../com
 import {google} from 'googleapis'
 import { Media, MediaType } from '../components/types'
 
-interface YoutubeVideo {
-  publishedAt: Date;
-  title: string;
-  videoId: string;
-}
-
 export const getStaticProps: GetStaticProps = async (context) => {
   const instance = google.youtube({
     version: 'v3',
-    auth: 'AIzaSyDienhJbQVphSCZvOanDPy_sHfb84iwjWI',
+    auth: process.env.YT_KEY,
   });
 
   const results = await instance.playlistItems.list({
     playlistId: 'PL-LwXcXRA2ocTwwdPg0tU_0zx7IrBSRA4',
     part: ['snippet', 'id', 'contentDetails'],
+    maxResults: 50,
   });
   const items = results.data.items || [];
 
