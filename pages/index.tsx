@@ -53,6 +53,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 export default function Home(props: {videos: Media<number>[]}) {
   const allMedia: Media<Date>[] = props.videos.map(v => {
+
     return {
       ...v,
       date: new Date(v.date),
