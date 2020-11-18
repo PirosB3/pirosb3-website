@@ -62,6 +62,20 @@ export default function Home(props: {videos: Media<number>[]}) {
     <div className='container mx-auto font-inter bg-white shadow-2xl md:my-10'>
       <Head>
         <title>Daniel Pyrathon</title>
+        <meta name="title" content="Daniel Pyrathon" />
+        <meta name="description" content="Personal Website of Daniel Pyrathon, Software Engineer living and working in San Francisco." />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://pirosb3.io/" />
+        <meta property="og:title" content="Daniel Pyrathon" />
+        <meta property="og:description" content="Personal Website of Daniel Pyrathon, Software Engineer living and working in San Francisco." />
+        <meta property="og:image" content="" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://pirosb3.io/" />
+        <meta property="twitter:title" content="Daniel Pyrathon" />
+        <meta property="twitter:description" content="Personal Website of Daniel Pyrathon, Software Engineer living and working in San Francisco." />
+        <meta property="twitter:image" content="" />
       </Head>
       <div className="flex flex-wrap my-header py-24 md:px-12 px-6 text-lg md:items-center">
         <div className="md:w-1/2 justify-center flex">
