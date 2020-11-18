@@ -63,14 +63,14 @@ export default function Home(props: {videos: Media<number>[]}) {
       <Head>
         <title>Daniel Pyrathon</title>
       </Head>
-      <div className="flex flex-wrap my-header py-24 px-12 text-lg">
+      <div className="flex flex-wrap my-header py-24 px-12 text-lg md:items-center">
         <div className="md:w-1/2 justify-center flex">
             <div className="relative">
               <Image src="/images/daniel.png" width="616" height="460" className="h-full w-full object-cover rounded-2xl" />
             </div>
         </div>
         <div className="md:w-1/2 flex-1 md:ml-12 ml-6">
-          <h1 className="lg:mt-0 mt-20 font-bold font-syne text-5xl">Hello, I'm Daniel!</h1>
+          <h1 className="font-bold font-syne text-5xl">Hello, I'm Daniel!</h1>
           <p className="mt-3">
             This is my personal space. I love computers, building software, and fostering a culture of passion and growth within my team.
           </p>
