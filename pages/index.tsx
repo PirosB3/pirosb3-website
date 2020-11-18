@@ -63,7 +63,7 @@ export default function Home(props: {videos: Media<number>[]}) {
       <Head>
         <title>Daniel Pyrathon</title>
       </Head>
-      <div className="flex flex-wrap my-header py-24 px-12 text-lg md:items-center">
+      <div className="flex flex-wrap my-header py-24 md:px-12 px-6 text-lg md:items-center">
         <div className="md:w-1/2 justify-center flex">
             <div className="relative">
               <Image src="/images/daniel.png" width="616" height="460" className="h-full w-full object-cover rounded-2xl" />
@@ -75,7 +75,7 @@ export default function Home(props: {videos: Media<number>[]}) {
             This is my personal space. I love computers, building software, and fostering a culture of passion and growth within my team.
           </p>
           <p className="mt-3">
-            I moved to San Francisco in 2015 to work for an Online Dating startup (my mum is still unclear of what I used to do) and I ended up biting the "Bitcoin bug"
+            I moved to San Francisco from Italy in 2015 to work for an Online Dating startup (my mum is still unclear of what I used to do) and I ended up biting the "Bitcoin bug"
             when I discovered the Whitepaper. Nowadays, I work for <a className="underline" target="_blank" href="https://0x.org">0x</a> with a really amazing group of people.
           </p>
           <p className="mt-3">
@@ -104,7 +104,7 @@ export default function Home(props: {videos: Media<number>[]}) {
           <a className="mx-2" href="mailto:pirosb3@gmail.com">Email</a>
           <a className="mx-2" target="_blank" href="https://www.linkedin.com/in/danielpyrathon/">Linkedin</a>
           <a className="mx-2" target="_blank" href="https://github.com/PirosB3/">GitHub</a>
-          <a className="mx-2" href="/pubkey.asc">PGP public key 🔑</a>
+          <a className="mx-2 hidden md:inline-block" href="/pubkey.asc">PGP public key 🔑</a>
         </div>
       </footer>
     </div>

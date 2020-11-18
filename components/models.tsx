@@ -10,7 +10,7 @@ export const Styles = {
     'sectionBox': 'flex flex-col mt-5 px-12',
     'sectionHeader': 'font-semibold text-2xl mb-5 md:pl-2 font-syne font-bold text-3xl',
     'componentTitle': 'font-bold text-xl',
-    'longChildItem': 'flex flex-col w-full mb-8 pt-5 px-3'
+    'longChildItem': 'flex flex-col w-full mb-8 pt-5 md:px-3'
 }
 
 export const WorkComponent: FunctionComponent<{work: Work}> = (props) => {
@@ -35,10 +35,10 @@ export const MediaComponent: FunctionComponent<{media: Media<Date>}> = (props) =
     return (
         <div className={Styles.longChildItem}>
             <h3 className={`${Styles.componentTitle} underline`}><a target="_blank" href={media.url}>{media.title}</a></h3>
-            <div className="flex mt-3 ">
+            <div className="flex mt-3">
                 <img src={MEDIA_IMAGES[media.type]} />
-                <p className="ml-2 color-date font-medium">{media.type.toString()}</p>
-                <p className="color-date ml-2"> • {media.date.toLocaleDateString("en-US")} • {media.location}</p>
+                <p className="ml-2 color-date font-medium sm:inline-block hidden">{media.type.toString()}</p>
+                <p className="color-date ml-2"><span className="sm:inline-block hidden"> • {media.date.toLocaleDateString("en-US")} • </span>{media.location}</p>
             </div>
         </div>
     );
