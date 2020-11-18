@@ -65,6 +65,7 @@ export default function Home(props: {videos: Media<number>[]}) {
         <meta name="title" content="Daniel Pyrathon" />
         <meta name="description" content="Personal Website of Daniel Pyrathon, Software Engineer living and working in San Francisco." />
 
+        <meta name="google-site-verification" content="F7jITjc2g7_E2MniHnauia-_d57DyLwTvqG2t5sXpvo" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://pirosb3.io/" />
         <meta property="og:title" content="Daniel Pyrathon" />
