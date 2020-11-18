@@ -17,13 +17,13 @@ export const WorkComponent: FunctionComponent<{work: Work}> = (props) => {
     const { work } = props;
     return (
         <div className="flex md:w-1/2 w-full mb-8">
-            <div className="relative w-2/6">
+            <div className="relative md:w-2/6">
                 <img className="absolute w-full h-full object-cover" src={work.imageUrl} />
             </div>
-            <div className="flex flex-col mr-12 w-4/5">
-                <div className={`${Styles.componentTitle} ml-5 flex-grow mt-5`}><a className="underline" target="_blank" href={work.employerUrl}>{work.employer}</a></div>
-                <div className="ml-5 flex-grow text-gray-700 font-bold">{work.duration}</div>
-                <div className="ml-5 flex-grow">{work.description}</div>
+            <div className="flex flex-col md:mr-12 md:w-4/5">
+                <div className={`${Styles.componentTitle} md:ml-5 flex-grow mt-5`}><a className="underline" target="_blank" href={work.employerUrl}>{work.employer}</a></div>
+                <div className="md:ml-5 flex-grow text-gray-700 font-bold">{work.duration}</div>
+                <div className="md:ml-5 flex-grow">{work.description}</div>
             </div>
         </div>
     )

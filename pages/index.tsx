@@ -70,7 +70,7 @@ export default function Home(props: {videos: Media<number>[]}) {
             </div>
         </div>
         <div className="md:w-1/2 flex-1 md:ml-12 ml-6">
-          <h1 className="md:mt-20 font-bold font-syne text-5xl">Hello, I'm Daniel!</h1>
+          <h1 className="lg:mt-0 mt-20 font-bold font-syne text-5xl">Hello, I'm Daniel!</h1>
           <p className="mt-3">
             This is my personal space. I love computers, building software, and fostering a culture of passion and growth within my team.
           </p>
