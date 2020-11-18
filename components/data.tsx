@@ -2,47 +2,41 @@ import { Work, Media, MediaType, Project } from "./types"
 
 export const WORKS: Work[] = [
     {
-        title: 'Senior Software Engineer',
         employer: 'ZeroEx Inc.',
         employerUrl: 'https://0x.org',
         description: `
-        Build open source infrastructure and tooling (TypeScript, Python, Go) with 
-        potential to disrupt the legacy financial system.
+        I build open source tooling and infrastructure on Ethereum for the 0x Decentralized Exchange
         `,
         duration: 'Mar/2019 - Today',
         imageUrl: '/images/logos/0x.png',
     },
     {
-        title: 'Senior Machine Learning engineer',
         employer: 'Coffee meets Bagel',
         employerUrl: 'https://coffeemeetsbagel.com/',
         description: `
-        Build open source infrastructure and tooling (TypeScript, Python, Go) with 
-        potential to disrupt the legacy financial system.
+        I worked on the matching algorithms for online dating using rule-based systems, linear models, 
+        and collaborative filtering.
         `,
         duration: 'Sep/2015 - Mar/2019',
         imageUrl: '/images/logos/cmb.png',
     },
     {
-        title: 'Developer',
         employer: 'Skimlinks',
         employerUrl: 'https://skimlinks.com/',
         description: `
-        Build open source infrastructure and tooling (TypeScript, Python, Go) with 
-        potential to disrupt the legacy financial system.
+        I worked on dynamic client-side user interfaces and Chrome extensions for the Skimlinks Publisher Hub
         `,
-        duration: 'Sep/2015 - Mar/2019',
+        duration: 'Sep/2013 - Jun/2013',
         imageUrl: '/images/logos/skimlinks.png',
     },
     {
-        title: 'Cofounder',
         employer: 'Gnammo',
         employerUrl: 'https://gnammo.com/',
         description: `
-        Build open source infrastructure and tooling (TypeScript, Python, Go) with 
-        potential to disrupt the legacy financial system.
+        I started Gnammo at the age of 17 with 3 other team-members that I met over Skype! The first time we met all 
+        together was on the day of our public launch in Milan!
         `,
-        duration: 'Sep/2015 - Mar/2019',
+        duration: 'Sep/2012 - Jun/2013',
         imageUrl: '/images/logos/gnammo.png',
     },
 ]
@@ -77,7 +71,7 @@ export const PROJECTS: Project[] = [
         title: 'CycleToken',
         description: (
             <span>
-                CycleToken is a unique collection of 7 cryptocurrency tokens (ERC721) that I build to raise money for <a target="_blank" className="underline" href="https://www.aidslifecycle.org/">AIDS LifeCycle</a>.
+                CycleToken is a unique collection of 7 cryptocurrency tokens (ERC721) that I built to raise money for <a target="_blank" className="underline" href="https://www.aidslifecycle.org/">AIDS LifeCycle</a>.
             </span>
         ),
     },

@@ -59,7 +59,7 @@ export default function Home(props: {videos: Media<number>[]}) {
     }
   }).concat(MEDIA).sort((a, b) => a.date < b.date ? 1 : -1);
   return (
-    <div className='container mx-auto font-inter bg-white shadow-2xl my-10'>
+    <div className='container mx-auto font-inter bg-white shadow-2xl md:my-10'>
       <Head>
         <title>Daniel Pyrathon</title>
       </Head>

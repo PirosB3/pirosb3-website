@@ -2,7 +2,6 @@ export interface Work {
     duration: string;
     employer: string;
     employerUrl: string;
-    title: string;
     description: string;
     imageUrl: string;
 }
