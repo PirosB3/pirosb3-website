@@ -56,13 +56,20 @@ export const MEDIA: Media<Date>[] = [
         type: MediaType.Article,
         url: 'https://medium.com/@pirosb3/how-sf-python-hosted-a-remote-meetup-during-the-times-of-covid-19-b6ac10ba4cb8',
     },
-    // {
-    //     date: 'Jul/2014',
-    //     location: 'PyCon IT - Florence',
-    //     title: 'Daniel Pyrathon about Meta API at Django: Under The Hood',
-    //     type: MediaType.Video,
-    //     url: 'https://www.youtube.com/watch?v=pxBfDe7wiEo',
-    // },
+    {
+        date: new Date(2019, 1, 30),
+        location: 'Kite',
+        title: 'Practical Machine Learning with Python and Keras',
+        type: MediaType.Article,
+        url: 'https://www.kite.com/blog/python/python-machine-learning-keras/',
+    },
+    {
+        date: new Date(2016, 8, 30),
+        location: 'DZone',
+        title: "How We Developed the Official Chatbot for SF's Outside Lands Music Festival",
+        type: MediaType.Article,
+        url: 'https://www.kite.com/blog/python/python-machine-learning-keras/',
+    },
 ];
 
 export const PROJECTS: Project[] = [
