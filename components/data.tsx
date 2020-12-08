@@ -70,6 +70,13 @@ export const MEDIA: Media<Date>[] = [
         type: MediaType.Article,
         url: 'https://www.kite.com/blog/python/python-machine-learning-keras/',
     },
+    {
+        date: new Date(2020, 5, 2),
+        url: 'https://www.crowdcast.io/e/defi-discussions/35',
+        title: 'Consuming liquidity from the 0x API',
+        location: 'DeFi Discussions',
+        type: MediaType.Video,
+    }
 ];
 
 export const PROJECTS: Project[] = [
