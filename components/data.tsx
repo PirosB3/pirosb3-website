@@ -5,7 +5,7 @@ export const WORKS: Work[] = [
         employer: 'ZeroEx Inc.',
         employerUrl: 'https://0x.org',
         description: `
-        I build open source tooling and infrastructure on Ethereum for the 0x Decentralized Exchange
+        I am the Tech Lead on our Maker team, I collaborate with market makers and build open source infrastructure on Ethereum for the 0x Decentralized Exchange
         `,
         duration: 'Mar/2019 - Today',
         imageUrl: '/images/logos/0x.png',
