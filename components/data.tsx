@@ -90,7 +90,7 @@ export const PROJECTS: Project[] = [
         ),
     },
     {
-        url: 'https://0xdoc.xyz/',
+        url: 'https://angry-pasteur-b9e877.netlify.app/',
         title: '0x Doc',
         description: (
             <span>
