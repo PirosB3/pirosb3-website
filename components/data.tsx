@@ -76,7 +76,14 @@ export const MEDIA: Media<Date>[] = [
         title: 'Consuming liquidity from the 0x API',
         location: 'DeFi Discussions',
         type: MediaType.Video,
-    }
+    },
+    {
+        date: new Date(2021, 9, 30),
+        url: 'https://www.crowdcast.io/e/playfulsummit/19',
+        title: 'Gasless Trading w/ 0x Protocol / Matcha',
+        location: 'Playful: A NFT & DeFi Summit',
+        type: MediaType.Video,
+    },
 ];
 
 export const PROJECTS: Project[] = [
