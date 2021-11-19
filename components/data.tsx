@@ -43,6 +43,13 @@ export const WORKS: Work[] = [
 
 export const MEDIA: Media<Date>[] = [
     {
+        date: new Date(2021, 11, 16),
+        location: 'Medium',
+        title: 'Using PDAs and SPL Token in Anchor',
+        type: MediaType.Article,
+        url: 'https://medium.com/@pirosb3/using-pdas-and-spl-token-in-anchor-and-solana-df05c57ccd04',
+    },
+    {
         date: new Date(2019, 1, 1),
         location: 'AWS Blog guest post',
         title: 'Powering recommendation models using Amazon ElastiCache for Redis at Coffee Meets Bagel',
