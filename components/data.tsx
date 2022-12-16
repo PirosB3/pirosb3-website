@@ -2,6 +2,15 @@ import { Work, Media, MediaType, Project } from "./types"
 
 export const WORKS: Work[] = [
     {
+        employer: 'Phantom Technologies',
+        employerUrl: 'https://phantom.app',
+        description: `
+        Working with a world class team on Backend and Infrastructure to provide the best user experience without ever having to compromise on security
+        `,
+        duration: 'Feb/2022 - Today',
+        imageUrl: '/images/logos/phantom-125.png',
+    },
+    {
         employer: 'ZeroEx Inc.',
         employerUrl: 'https://0x.org',
         description: `
@@ -42,6 +51,13 @@ export const WORKS: Work[] = [
 ]
 
 export const MEDIA: Media<Date>[] = [
+    {
+        date: new Date(2022, 11, 7),
+        location: "Lisbon, Portugal",
+        title: "Breakpoint 2022: Write Your First Anchor Program: Building a Vesting Schedule",
+        type: MediaType.Video,
+        url: "https://www.youtube.com/watch?v=aWIULtXsPjM",
+    },
     {
         date: new Date(2021, 11, 16),
         location: 'Medium',
