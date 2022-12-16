@@ -56,7 +56,7 @@ export const ProjectComponent: FunctionComponent<{project: Project}> = (props) =
     );
 }
 
-export const Section: FunctionComponent<{title: string, childBoxClassExtra?: string, parentBoxClassExtra?: string }> = (props) => {
+export const Section: FunctionComponent<React.PropsWithChildren<{title: string, childBoxClassExtra?: string, parentBoxClassExtra?: string }>> = (props) => {
     return (
         <div className={`${Styles.sectionBox} ${props.parentBoxClassExtra}`}>
             <h2 className={Styles.sectionHeader}>{props.title}</h2>
