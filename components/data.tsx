@@ -16,7 +16,7 @@ export const WORKS: Work[] = [
         description: `
         I am the Tech Lead on our Maker team, I collaborate with market makers and build open source infrastructure on Ethereum for the 0x Decentralized Exchange
         `,
-        duration: 'Mar/2019 - Today',
+        duration: 'Mar/2019 - Feb/2022',
         imageUrl: '/images/logos/0x.png',
     },
     {
