@@ -117,7 +117,6 @@ export default function Home(props: {videos: Media<number>[]}) {
       <footer className="flex flex-col w-full py-5 px-12 footer-color border-t-2 mt-8">
         <div className="flex my-4">
           <a className="flex-grow" target="_blank" href="https://twitter.com/pirosb3">@pirosb3</a>
-          <a className="mx-2" href="mailto:pirosb3@gmail.com">Email</a>
           <a className="mx-2" target="_blank" href="https://www.linkedin.com/in/danielpyrathon/">Linkedin</a>
           <a className="mx-2" target="_blank" href="https://github.com/PirosB3/">GitHub</a>
           <a className="mx-2 hidden md:inline-block" href="/pubkey.asc">PGP public key 🔑</a>
