@@ -2,12 +2,21 @@ import { Work, Media, MediaType, Project } from "./types"
 
 export const WORKS: Work[] = [
     {
+        employer: 'Bountycaster',
+        employerUrl: 'https://www.bountycaster.xyz',
+        description: `
+        We help create and complete bounties on Farcaster. I'm the CTO and co-founder of Bountycaster.
+        `,
+        duration: 'Oct/2023 - Today',
+        imageUrl: '/images/logos/bcaster3.png',
+    },
+    {
         employer: 'Phantom Technologies',
         employerUrl: 'https://phantom.app',
         description: `
         Working with a world class team of Backend and Infrastructure engineers to provide the best wallet UX without ever having to compromise on security
         `,
-        duration: 'Feb/2022 - Today',
+        duration: 'Feb/2022 - Aug/2023',
         imageUrl: '/images/logos/phantom-125.png',
     },
     {
