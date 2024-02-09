@@ -2,13 +2,11 @@ import { Work, Media, MediaType, Project } from "./types"
 
 export const WORKS: Work[] = [
     {
-        employer: 'Bountycaster',
-        employerUrl: 'https://www.bountycaster.xyz',
-        description: `
-        We help create and complete bounties on Farcaster. I'm the CTO and co-founder of Bountycaster.
-        `,
+        employer: 'Sabbatical',
+        employerUrl: 'https://en.wikipedia.org/wiki/Sabbatical',
+        description: `Taking time off to explore web applications with Python and OpenAI`,
         duration: 'Oct/2023 - Today',
-        imageUrl: '/images/logos/bcaster3.png',
+        imageUrl: '/images/logos/gnammo.png',
     },
     {
         employer: 'Phantom Technologies',
