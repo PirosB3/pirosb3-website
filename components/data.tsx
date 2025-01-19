@@ -42,7 +42,7 @@ export const WORKS: Work[] = [
         employer: 'Skimlinks',
         employerUrl: 'https://skimlinks.com/',
         description: `
-        I worked on dynamic client-side user interfaces and Chrome extensions for the Skimlinks Publisher Hub
+        I worked on dynamic client-side user interfaces and Chrome extensions for the Skimlinks Publisher Hub
         `,
         duration: 'Sep/2013 - Jun/2013',
         imageUrl: '/images/logos/skimlinks.png',
@@ -60,6 +60,13 @@ export const WORKS: Work[] = [
 ]
 
 export const MEDIA: Media<Date>[] = [
+    {
+        date: new Date(2025, 0, 19), // January 19, 2025
+        location: 'Paragraph',
+        title: 'Farcaster is not just for crypto',
+        type: MediaType.Article,
+        url: 'https://paragraph.xyz/new/@pirosb3/farcaster-is-not-just-for-crypto',
+    },
     {
         date: new Date(2022, 11, 7),
         location: "Lisbon, Portugal",
@@ -141,7 +148,7 @@ export const PROJECTS: Project[] = [
         title: 'Django model meta contributions',
         description: (
             <span>
-                Designed, tested, and released Django’s Meta API, already in use by many developers in production. Planned the strategy for deprecation and backwards-compatibility: Old API 100% backwards-compatible.
+                Designed, tested, and released Django's Meta API, already in use by many developers in production. Planned the strategy for deprecation and backwards-compatibility: Old API 100% backwards-compatible.
                 My code can be found <a className="underline" target="_blank" href="https://github.com/django/django/commit/fb48eb05816b1ac87d58696cdfe48be18c901f16">Here</a>
             </span>
         ),
