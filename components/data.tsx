@@ -65,7 +65,7 @@ export const MEDIA: Media<Date>[] = [
         location: 'Paragraph',
         title: 'Farcaster is not just for crypto',
         type: MediaType.Article,
-        url: 'https://paragraph.xyz/new/@pirosb3/farcaster-is-not-just-for-crypto',
+        url: 'https://paragraph.xyz/@pirosb3/farcaster-is-not-just-for-crypto',
     },
     {
         date: new Date(2022, 11, 7),
